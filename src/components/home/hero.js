@@ -1,7 +1,7 @@
 import React from 'react';
-import { Carousel, Button, Card } from 'antd';
+import { Carousel, Button} from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
-import { Image } from 'antd';
+
 const items =[
     {
       key: '1',
@@ -25,7 +25,7 @@ const AppHero = ()=>{
         <Carousel >
                 {items.map(item=>{
                     return(
-                        <div className='container-fluid'>
+                        <div className='container-fluid-main'>
                             <div className='content'>
                             <h3>{item.title}</h3>
                             <p>{item.content}</p>

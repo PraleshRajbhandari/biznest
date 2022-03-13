@@ -1,19 +1,22 @@
 import './App.css';
 import { Layout } from 'antd';
 import 'antd/dist/antd.css';
-import Appheader from './components/common/header';
-import AppHome from './views/home';
-const { Header,Content } = Layout;
+import Main from './views/main';
+
+import {
+  BrowserRouter,
+
+} from "react-router-dom";
+const {Content } = Layout;
 
 function App() {
   return (
   <Layout className="mainLayout">
-    <Header>
-      <Appheader/>
-    </Header>
     <Content>
-        <AppHome/>
-    </Content>
+        <BrowserRouter>
+            <Main/>
+        </BrowserRouter>
+      </Content>
   </Layout>
   );
 }

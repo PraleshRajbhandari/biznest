@@ -1,6 +1,9 @@
 import React from 'react';
-import {Row,Col} from 'antd';
+import {Row,Col, Card} from 'antd';
+import { Link } from 'react-router-dom';
 import { PieChartTwoTone, DatabaseTwoTone , UsbTwoTone} from '@ant-design/icons';
+import bks from '../../assets/images/bks.jpg'
+const { Meta } = Card;
 const items = [
     {
       key: '1',
@@ -25,35 +28,43 @@ const items = [
 const AppAbout=()=>{
 return(
     <div className='block aboutblock '>
-        <div className='container-fluid'>
+        <div className='container-fluid-main'>
             <div className='titleHolder'>
                 <h2>About</h2>
-                <p>dolor sit amet, consectetur adipisicing elit</p>
+                <p>Better Consultancy</p>
             </div>
             <div className='contentHolder'>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit necessitatibus officiis repudiandae est deserunt delectus dolorem iure porro distinctio fuga, nostrum doloremque. Facilis porro in 
-                    laborum dolor amet ratione hic? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam aut a porro, adipisci
-                    quidem sint enim pariatur ducimus, saepe voluptatibus inventore commodi! 
-                    Quis, explicabo molestias libero tenetur temporibus perspiciatis deserunt.
+                The Biznest Consultants Pvt. Ltd., a business consulting company is a leading
+                Accounting and Consulting Firm of Nepal offering a wide range of services. At TBC, we
+                focus primarily on Bookkeeping, Auditing, Advisory, Taxation, and Business
+                Consultancy Services applying multi-disciplined expert knowledge of professionals of
+                the related areas.<br/>
+                <Link to="/about">Read More...</Link>
                 </p>
+            </div>
+            <div className='container-fluid-main'>
+            <div className='titleHolder'>
+                <h2>Team Members</h2>
+                <p>Excellent Core Team Made From Higly Dedicated Personnels</p>
             </div>
             <Row gutter={[16, 16]}>
                 {items.map((item,index)=>{
                     return(
                     <Col span={8} key={index}>
-                        <div className='content' >
-                            <div className='icon'>
-                                {item.icon}
-                            </div>
-                            <h3>{item.title}</h3>
-                            <p>{item.content}</p>
-                        </div>
+                       <Card
+                       hoverable
+                        cover={<img alt="example" src={bks}/>}
+                    >
+                        <Meta title="CTO" description="Bikesh Shrestha" />
+
+                       </Card>
                     
                     </Col>
                     )}
                 )}   
             </Row>
+        </div>
         </div>
     </div>
 )

@@ -11,7 +11,13 @@ body {
 
 .container-fluid {
   margin: 0 auto;
-  max-width: 1200px;
+  /* max-width: 1200px; */
+  /* padding: 0 15px; */
+}
+
+.container-fluid-main{
+  margin: 0 auto;
+  max-width: 1200px; 
   padding: 0 15px;
 }
 
@@ -79,6 +85,7 @@ header
   align-items: center;
   padding: 15px 0;
   min-height: 65px;
+  background-color: lightsalmon;
 }
 .header .logo {
   font-size: 22px;
@@ -209,6 +216,7 @@ hero
   background-position: 50% 100%;
   background-size: cover;
   height: 100vh;
+  margin-top: 10px;
 }
 
 .heroBlock .container-fluid {
