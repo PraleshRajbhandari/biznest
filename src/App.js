@@ -7,17 +7,16 @@ import {
   BrowserRouter,
 
 } from "react-router-dom";
-const {Content } = Layout;
+const {Content} = Layout;
 
 function App() {
   return (
-  <Layout className="mainLayout">
     <Content>
         <BrowserRouter>
             <Main/>
         </BrowserRouter>
-      </Content>
-  </Layout>
+</Content>
+   
   );
 }
 

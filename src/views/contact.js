@@ -17,14 +17,6 @@ const AppContact = ()=>{
     return(
       <div>
         <Row>
-            <Col span={24} style={{height:'20vh', background:'coral',padding:20, margin:20,maxWidth:1300}}>
-                <Typography style={{flexGrow: 1, textAlign: "left", fontSize:'20px', color:'grey'}}>Contact Us:</Typography>
-                <Typography style={{flexGrow: 1, textAlign: "left", fontSize:'20px', color:'grey'}}>Address: Sinamangal,Ktm, Nepal </Typography>
-                <Typography style={{flexGrow: 1, textAlign: "left", fontSize:'20px', color:'grey'}}>Phone: 9860452256 </Typography>
-                <Typography style={{flexGrow: 1, textAlign: "left", fontSize:'20px', color:'coral'}}>* In Case Any Queries Fill Up The Form And We Will Get Back To You. </Typography>
-            </Col>
-        </Row> 
-        <Row>
             <Col xl={18}>
                 <Content style={{margin:30}}>
                     <Form

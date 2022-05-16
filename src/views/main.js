@@ -7,7 +7,7 @@ import {
 import AppHome from './home';
 import AppAbout from './about';
 import AppContact from './contact';
-import FooterComponent from '../components/common/footer';
+import FooterComponent from '../components/common/footer/footer';
 import AppServices from './services';
 import OutSourcingOfBookkeeping from '../components/services/OutsourcingOfBookkeeping';
 import AuditAndAssurance from './../components/services/AuditAndAssurance';
@@ -18,13 +18,13 @@ import FixedAssetManagement from './../components/services/FixedAssetManagement'
 import BusinessConsulting from './../components/services/BusinessConsulting';
 import Others from './../components/services/Others';
 import Taxation from './../components/services/Taxation';
-
+import '../App.css'
 const Main = ()=>{
     return(
-        <div>
+        <div className='App'>
                 <Header/>
                 <Routes>
-                    <Route path="/home" element={<AppHome />} />
+                    <Route path="/" element={<AppHome />} />
                     <Route path="/about" element={<AppAbout />} />
                     <Route path="/contact" element={<AppContact />} />
                     <Route path="/services" element={<AppServices />} />

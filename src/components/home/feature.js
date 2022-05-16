@@ -11,14 +11,14 @@ import { Link } from 'react-router-dom';
 const { Meta } = Card;
 const AppFeature = () =>{
     return(
-        <div className='block featureBlock bgGray'>
+        <div className='block aboutblock bgGray'>
+         <div className='container-fluid'>
             <div className='titleHolder'>
                 <h2>Key Services</h2>
                 <p>We Provide Services Related To Accounting, Counsulting and
                     <Link to="/services">{" "}More</Link>
                 </p>
             </div>
-            <div className='container-fluid-main'>
             <Row gutter={[16, 16]}>
                 <Col span={8} > 
                     <Card
@@ -70,7 +70,7 @@ const AppFeature = () =>{
                 </Col>
             </Row>
             </div>
-        </div>
+            </div>
     )
 }
 
